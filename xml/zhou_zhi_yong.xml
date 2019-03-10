@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--个人名片-->
+<person>
+    <name>周志勇</name>
+    <age>21</age>
+    <gender>male</gender>
+    <introduction>东南大学软件学院16级本科生</introduction>
+    <address>南京市江宁区东南大学路2号</address>
+    <postcode>211189</postcode>
+    <mobile>15651792537</mobile>
+    <email>455145348@qq.com</email>
+    <QQ>455145348</QQ>
+</person>

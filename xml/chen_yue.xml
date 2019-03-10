@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Yue Chen's Personal Infomation -->
+<person>
+	<basic>
+		<name>陈玥</name>
+		<gender>女</gender>
+		<age>20</age>
+	</basic>
+	<introduction>东南大学软件学院16级本科生</introduction>
+	<address>南京市江宁区东南大学路2号</address>
+	<contact>
+		<postcode>211189</postcode>
+		<mobile>15651973816</mobile>
+		<email>826284647@qq.com</email>
+	</contact>
+	<motto font="blue">Where there is a will, there is a way</motto>
+</person>

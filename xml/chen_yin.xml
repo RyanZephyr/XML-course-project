@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Ryan Chen's Personal Infomation -->
+<person>
+    <name>陈崟</name>
+    <age>21</age>
+    <gender>male</gender>
+    <introduction>东南大学软件学院16级本科生</introduction>
+    <address postcode="211189">南京市江宁区东南大学路2号</address>
+    <contact>
+        <mobile>15850682605</mobile>
+        <email>448068200@qq.com</email>
+        <QQ>448068200</QQ>
+    </contact>
+</person>
