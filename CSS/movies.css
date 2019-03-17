@@ -1,0 +1,79 @@
+movies {
+    background-color: whitesmoke;
+    width: 100%;
+    word-break: normal;
+}
+movie:before {
+    content: attr(ranking) ' ' attr(IMDb) ' ' attr(country) ' ' attr(release_year);
+    color: #ff6c22;
+    font-size: 10pt;
+    font-weight: bold;
+}
+movie {
+    display: block;
+    margin-bottom: 20pt;
+    margin-left: 2%;
+    content:attr(ranking);
+}
+Chinese_name {
+    display: block;
+    color: #0000ff;
+    font-size: 13pt;
+    font-weight:bold;
+}
+English_name {
+    display: block;
+    color: #0000ff;
+    font-size: 13pt;
+    font-weight:bold;
+}
+directors:before
+{
+    content:"导演："
+}
+directors{
+    font-size: 10pt;
+}
+stars{
+    display: block;
+    font-size: 10pt;
+}
+genre:first-child:before
+{
+    content: "分类：";
+    font-size: 10pt;
+}
+genre:after{
+    content: attr(category) '.';
+    font-size: 10pt;
+}
+language:first-child:before
+{
+    content: "\00A0\00A0""语言：";
+    font-size: 10pt;
+}
+language:after{
+    content: attr(category) '.';
+    font-size: 10pt;
+}
+introduction{
+    display: block;
+    text-align: justify;
+    text-justify: inter-ideograph;
+    color: #DB7093;
+    font-size: 10pt;
+    width: 500pt;
+}
+review:before{
+    content: '豆瓣评分：' attr(rating)"\00A0\00A0\00A0\00A0\00A0" '评分人数：' attr(number)'\a''"';
+    font-size: 10pt;
+    white-space: pre;
+}
+review{
+    font-size: 10pt;
+    font-weight: bold;
+}
+review:after
+{
+    content:"\"";
+}

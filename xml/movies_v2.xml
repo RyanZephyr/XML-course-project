@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE movies SYSTEM "movies.dtd">
+<?xml-stylesheet type="text/css" href="../CSS/movies.css"?>
 <!-- Top 250 Movies on Douban -->
 <movies>
     <movie ranking="1" IMDb="tt0111161" country="USA" release_year="1994">
