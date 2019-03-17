@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="Chinese_name" type="xs:string"/>
+	<xs:element name="English_name" type="xs:string"/>
+	<xs:element name="name">
+		<xs:complexType>
+			<xs:all>
+				<xs:element ref="Chinese_name"/>
+				<xs:element ref="English_name"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="director" type="xs:string"/>
+	<xs:element name="directors">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="director" minOccurs="1" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="actor" type="xs:string"/>
+	<xs:element name="stars">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="actor" maxOccurs="3"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="genre">
+		<xs:complexType>
+			<xs:attribute name="category">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="Drama"/>
+						<xs:enumeration value="Crime"/>
+						<xs:enumeration value="Comedy"/>
+						<xs:enumeration value="Animation"/>
+						<xs:enumeration value="Biography"/>
+						<xs:enumeration value="Action"/>
+						<xs:enumeration value="Adventure"/>
+						<xs:enumeration value="Thriller"/>
+						<xs:enumeration value="Fantasy"/>
+						<xs:enumeration value="Romance"/>
+						<xs:enumeration value="Sci-Fi"/>
+						<xs:enumeration value="Family"/>
+						<xs:enumeration value="Mystery"/>
+						<xs:enumeration value="History"/>
+						<xs:enumeration value="War"/>
+						<xs:enumeration value="Music"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="genres">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="genre" minOccurs="1" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="language">
+		<xs:complexType>
+			<xs:attribute name="category">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="English"/>
+						<xs:enumeration value="Cantonese"/>
+						<xs:enumeration value="French"/>
+						<xs:enumeration value="Italian"/>
+						<xs:enumeration value="Japanese"/>
+						<xs:enumeration value="Indian"/>
+						<xs:enumeration value="Korean"/>
+						<xs:enumeration value="Latin"/>
+						<xs:enumeration value="Thai"/>
+						<xs:enumeration value="Mandarin"/>
+						<xs:enumeration value="Tamil"/>
+						<xs:enumeration value="Hindi"/>
+						<xs:enumeration value="German"/>
+						<xs:enumeration value="Swedish"/>
+						<xs:enumeration value="Hebrew"/>
+						<xs:enumeration value="Polish"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="languages">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="language" minOccurs="1" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="basic">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="name"/>
+				<xs:element ref="directors"/>
+				<xs:element ref="stars"/>
+				<xs:element ref="genres"/>
+				<xs:element ref="languages"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="introduction" type="xs:string"/>
+	<xs:element name="review">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="rating">
+						<xs:simpleType>
+							<xs:restriction base="xs:decimal">
+								<xs:fractionDigits value="1" />
+								<xs:minInclusive value="0.0" />
+								<xs:maxInclusive value="10.0" />
+							</xs:restriction>
+						</xs:simpleType>					
+					</xs:attribute>
+					<xs:attribute name="number" type="xs:nonNegativeInteger"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="movie">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="basic"/>
+				<xs:element ref="introduction"/>
+				<xs:element ref="review"/>
+			</xs:sequence>
+			<xs:attribute name="ranking" type="xs:positiveInteger" />
+			<xs:attribute name="IMDb" type="xs:ID"/>
+			<xs:attribute name="country">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="USA"/>
+						<xs:enumeration value="HK"/>
+						<xs:enumeration value="China"/>
+						<xs:enumeration value="France"/>
+						<xs:enumeration value="Italy"/>
+						<xs:enumeration value="Japan"/>
+						<xs:enumeration value="India"/>
+						<xs:enumeration value="Korea"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="release_year" type="xs:gYear"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="movies">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="movie" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
