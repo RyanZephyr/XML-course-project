@@ -27,13 +27,13 @@
 							<img src="../images/posters/{$img}" style="width:300px; height:400px; position:relative;" />
 						</a>
 						<!-- text -->
-						<div style="margin-left:330px; margin-top:-400px; height:460px;">
+						<div style="margin-left:330px; margin-top:-400px;">
 							<p>
 								<b>NO.<xsl:value-of select="@ranking" /></b>
 								&#160;&#160;
-								<p style="background: #F9C461; border: 1px solid #F9C461; border-radius: 40px 30px 20px 10px;">
+								<font style="background: #F9C461; border: 1px solid #F9C461; border-radius: 40px 30px 20px 10px;">
 									<xsl:value-of select="review/@rating" />
-								</p>
+								</font>
 							</p>
 							<p style="font-size: 20px;">
 								<b>
