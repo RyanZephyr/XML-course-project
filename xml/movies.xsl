@@ -20,18 +20,20 @@
 						<xsl:value-of select="@IMDb" />
 					</xsl:variable>
 
+					<!-- movie block -->
 					<div style="margin:30px; background-color:#FFFFFF;">
+						<!-- img -->
 						<a href="https://www.imdb.com/title/{$IMDb}/">
 							<img src="../images/posters/{$img}" style="width:300px; height:400px; position:relative;" />
 						</a>
-						<div style="margin-left:330px; margin-top:-400px; height:400px;">
+						<!-- text -->
+						<div style="margin-left:330px; margin-top:-400px; height:460px;">
 							<p>
-								<b>NO.</b>
-								<xsl:value-of select="@ranking" />
+								<b>NO.<xsl:value-of select="@ranking" /></b>
 								&#160;&#160;
-								<font color="FFD700">
+								<p style="background: #F9C461; border: 1px solid #F9C461; border-radius: 40px 30px 20px 10px;">
 									<xsl:value-of select="review/@rating" />
-								</font>
+								</p>
 							</p>
 							<p style="font-size: 20px;">
 								<b>
