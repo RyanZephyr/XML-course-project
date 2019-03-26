@@ -5,23 +5,24 @@
 			<xsl:apply-templates select="*|@*|text()|processing-instruction()" />
 		</xsl:copy>
 	</xsl:template>
+
 	<xsl:template match="/">
 		<html>
-			<body style="transform: scale(1.2);background-color:#8B4513;">
-				<h1 style="font-family: Georgia;text-align:center;">Douban Top 250 by XMLSpy</h1>
+			<!-- <body style="transform: scale(1.2);background-color:#EDF4ED;"> -->
+			<body style="background-color:#EDF4ED;">
+				<h1 style="font-family: Georgia; text-align:center;">Douban Top 250 by XMLSpy</h1>
+
 				<xsl:for-each select="movies/movie">
-					<xsl:variable name="color">                
-							  #CD851F
-						</xsl:variable>
 					<xsl:variable name="img">
 						<xsl:value-of select="@img" />
 					</xsl:variable>
 					<xsl:variable name="IMDb">
 						<xsl:value-of select="@IMDb" />
 					</xsl:variable>
-					<div style="margin:30px;background-color:{$color};">
+
+					<div style="margin:30px; background-color:#FFFFFF;">
 						<a href="https://www.imdb.com/title/{$IMDb}/">
-							<img src="../images/posters/{$img}" style="width:300px; height:400px;position:relative;" />
+							<img src="../images/posters/{$img}" style="width:300px; height:400px; position:relative;" />
 						</a>
 						<div style="margin-left:330px; margin-top:-400px; height:400px;">
 							<p>
@@ -37,9 +38,9 @@
 									<xsl:value-of select="basic/name/Chinese_name" />
 									&#160;&#160;&#160;
 									<xsl:value-of select="basic/name/English_name" />
-									（
+									(
 									<xsl:value-of select="@release_year" />
-									）
+									)
 								</b>
 							</p>
 							<xsl:choose>
@@ -80,7 +81,7 @@
 								国家：
 								<xsl:value-of select="@country" />
 							</p>
-							<p>
+							<p style="text-align: justify;text-justify: inter-ideograph;">
 								简介：
 								<xsl:value-of select="introduction" />
 							</p>
