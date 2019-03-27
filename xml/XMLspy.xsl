@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fo="http://www.w3.org/1999/XSL/Format">
+    <xsl:template match="*|@*|processing-instruction()">
+        <xsl:copy>
+            <xsl:apply-templates select="*|@*|text()|processing-instruction()" />
+        </xsl:copy>
+    </xsl:template>
+    <xsl:template match="/">
+        <html>
+            <head>
+                <meta charset="UTF-8" />
+                <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+                <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+                <link rel="shortcut icon" href="../favicon.ico" type="x-icon" />
+                <title>XMLspy</title>
+                <!-- Bootstrap core CSS -->
+                <link href="css/bootstrap.min.css" rel="stylesheet" />
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+                <link href="css/style.css" rel="stylesheet" />
+            </head>
+            <body>
+                <img src="../images/Logo.png" style="display:block; margin:0 auto;" />
+                <h3 style="text-align: center;">小组名称</h3>
+                <h4 style="text-align: center;">
+                    <xsl:value-of select="XMLspy/@name" />
+                </h4>
+                <h3 style="text-align: center;">小组编号</h3>
+                <h4 style="text-align: center;">
+                    <xsl:value-of select="XMLspy/@no" />
+                </h4>
+                <h3 style="text-align: center;">小组主题</h3>
+                <h4 style="text-align: center;">
+                    <xsl:value-of select="XMLspy/@theme" />
+                </h4>
+                <h3 style="text-align: center;">小组成员</h3>
+            </body>
+        </html>
+    </xsl:template>
+</xsl:stylesheet>

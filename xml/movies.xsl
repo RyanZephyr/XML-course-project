@@ -7,7 +7,6 @@
 	</xsl:template>
 	<xsl:template match="/">
 		<html>
-			<!-- <body style="transform: scale(1.2);background-color:#EDF4ED;"> -->
 			<body style="background-color:#EDF4ED;">
 				<h1 style="font-family: Georgia; text-align:center;">Douban Top 250 by XMLSpy</h1>
 				<xsl:for-each select="movies/movie">

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="XMLspy.xsl"?>
+<!--Information of XMLspy-->
+<XMLspy name="XMLspy" no="03" theme="Movies">
+    <person age="21" gender="male" sno="71116340">
+        <name>陈崟</name>
+        <identity>东南大学软件学院16级本科生</identity>
+        <address postcode="211189">江苏省南京市江宁区东南大学路2号</address>
+        <contact>
+            <mobile>15850682605</mobile>
+            <email>448068200@qq.com</email>
+        </contact>
+        <motto>The sun bursts, clouds break.</motto>
+    </person>
+    <person age="20" gender="female" sno="71116308">
+        <name>陈玥</name>
+        <identity>东南大学软件学院16级本科生</identity>
+        <address postcode="211189">江苏省南京市江宁区东南大学路2号</address>
+        <contact>
+            <mobile>15651973816</mobile>
+            <email>826284647@qq.com</email>
+        </contact>
+        <motto>Where there is a will, there is a way.</motto>
+    </person>
+    <person age="21" gender="male" sno="71116336">
+        <name>周志勇</name>
+        <identity>东南大学软件学院16级本科生</identity>
+        <address postcode="211189">江苏省南京市江宁区东南大学路2号</address>
+        <contact>
+            <mobile>15651792537</mobile>
+            <email>455145348@qq.com</email>
+        </contact>
+        <motto></motto>
+    </person>
+</XMLspy>
