@@ -34,8 +34,11 @@ directors:before
 directors{
     font-size: 10pt;
 }
+stars:before
+{
+    content:"演员："
+}
 stars{
-    display: block;
     font-size: 10pt;
 }
 genre:first-child:before

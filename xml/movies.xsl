@@ -5,13 +5,11 @@
 			<xsl:apply-templates select="*|@*|text()|processing-instruction()" />
 		</xsl:copy>
 	</xsl:template>
-
 	<xsl:template match="/">
 		<html>
 			<!-- <body style="transform: scale(1.2);background-color:#EDF4ED;"> -->
 			<body style="background-color:#EDF4ED;">
 				<h1 style="font-family: Georgia; text-align:center;">Douban Top 250 by XMLSpy</h1>
-
 				<xsl:for-each select="movies/movie">
 					<xsl:variable name="img">
 						<xsl:value-of select="@img" />
@@ -19,7 +17,6 @@
 					<xsl:variable name="IMDb">
 						<xsl:value-of select="@IMDb" />
 					</xsl:variable>
-
 					<!-- movie block -->
 					<div style="margin:30px; background-color:#FFFFFF;">
 						<!-- img -->
@@ -27,12 +24,17 @@
 							<img src="../images/posters/{$img}" style="width:300px; height:400px; position:relative;" />
 						</a>
 						<!-- text -->
-						<div style="margin-left:330px; margin-top:-400px; height:460px;">
+						<div style="margin-left:330px; margin-top:-400px; height:450px;">
 							<p>
-								<b>NO.<xsl:value-of select="@ranking" /></b>
+								<b>
+									NO.
+									<xsl:value-of select="@ranking" />
+								</b>
 								&#160;&#160;
-								<font style="font: 'Microsoft YaHei'; background: #F9C461; border: 1px solid #F9C461; border-radius: 10px 10px 10px 10px;">
-									豆瓣评分：<xsl:value-of select="review/@rating" />
+								<font style="font: 'Microsoft YaHei'; font-size: 14px; background: #F9C461; border: 1px solid #F9C461; border-radius: 10px 10px 10px 10px;">
+									&#160;豆瓣评分：
+									<xsl:value-of select="review/@rating" />
+									&#160;
 								</font>
 							</p>
 							<p style="font-size: 20px;">
@@ -40,9 +42,7 @@
 									<xsl:value-of select="basic/name/Chinese_name" />
 									&#160;&#160;&#160;
 									<xsl:value-of select="basic/name/English_name" />
-									(
-									<xsl:value-of select="@release_year" />
-									)
+									(<xsl:value-of select="@release_year" />)
 								</b>
 							</p>
 							<xsl:choose>
@@ -92,9 +92,9 @@
 								<xsl:value-of select="review" />
 							</p>
 						</div>
-						<xsl:if test="@country='China'">
+						<!-- <xsl:if test="@country='China'">
 							<img src="flag.jpg" style="width:50px; height:30px;position:relative;margin-top:-405px;margin-left:1580px;" />
-						</xsl:if>
+						</xsl:if> -->
 					</div>
 				</xsl:for-each>
 			</body>
