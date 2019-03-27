@@ -17,8 +17,9 @@
 
             </head>
             <body>
-                <img src="../images/Logo.png" style="display:block; margin:0 auto;" />
-                <table width="40%" align="center" style="margin: 10px;">
+                <img src="../images/Logo.png" style="display:block; margin:20px auto;" />
+                <p style="text-align: center; font-size: 15pt;">XML技术课程小组</p>
+                <table width="40%" align="center" style="margin: 30px auto;">
                     <thead>
                         <tr>
                             <th>小组名称</th>
