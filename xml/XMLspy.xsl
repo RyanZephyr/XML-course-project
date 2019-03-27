@@ -14,14 +14,33 @@
                 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
                 <link rel="shortcut icon" href="../favicon.ico" type="x-icon" />
                 <title>XMLspy</title>
-                <!-- Bootstrap core CSS -->
-                <link href="css/bootstrap.min.css" rel="stylesheet" />
-                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
-                <link href="css/style.css" rel="stylesheet" />
+
             </head>
             <body>
                 <img src="../images/Logo.png" style="display:block; margin:0 auto;" />
-                <h3 style="text-align: center;">小组名称</h3>
+                <table width="40%" align="center">
+                    <thead>
+                        <tr>
+                            <th>小组名称</th>
+                            <th>小组编号</th>
+                            <th>小组主题</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="text-align:center" height="70">
+                                <xsl:value-of select="XMLspy/@name" />
+                            </td>
+                            <td style="text-align:center" height="70">
+                                <xsl:value-of select="XMLspy/@no" />
+                            </td>
+                            <td style="text-align:center" height="70">
+                                <xsl:value-of select="XMLspy/@theme" />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- <h3 style="text-align: center;">小组名称</h3>
                 <h4 style="text-align: center;">
                     <xsl:value-of select="XMLspy/@name" />
                 </h4>
@@ -33,7 +52,7 @@
                 <h4 style="text-align: center;">
                     <xsl:value-of select="XMLspy/@theme" />
                 </h4>
-                <h3 style="text-align: center;">小组成员</h3>
+                <h3 style="text-align: center;">小组成员</h3> -->
             </body>
         </html>
     </xsl:template>
