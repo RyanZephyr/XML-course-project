@@ -3,63 +3,109 @@ movies {
     width: 100%;
     word-break: normal;
 }
+
 movie:before {
     content: attr(ranking) ' ' attr(IMDb) ' ' attr(country) ' ' attr(release_year);
     color: #ff6c22;
     font-size: 10pt;
     font-weight: bold;
 }
+
 movie {
     display: block;
     margin-bottom: 20pt;
     margin-left: 2%;
-    content:attr(ranking);
+    content: attr(ranking);
 }
+
 Chinese_name {
     display: block;
     color: #0000ff;
     font-size: 13pt;
-    font-weight:bold;
+    font-weight: bold;
 }
+
 English_name {
     display: block;
     color: #0000ff;
     font-size: 13pt;
-    font-weight:bold;
+    font-weight: bold;
 }
-directors:before
-{
-    content:"导演："
-}
-directors{
+
+
+/*directors*/
+
+director:first-child:before {
+    content: "导演：";
     font-size: 10pt;
 }
-stars:before
-{
-    content:"演员："
-}
-stars{
+
+directors {
+    display: block;
     font-size: 10pt;
 }
-genre:first-child:before
-{
+
+director::after {
+    content: attr(director) '.';
+    font-size: 10pt;
+}
+
+
+/*stars*/
+
+actor:first-child:before {
+    content: "演员：";
+    font-size: 10pt;
+}
+
+stars {
+    display: block;
+    font-size: 10pt;
+}
+
+actor:after {
+    content: attr(actor) '.';
+    font-size: 10pt;
+}
+
+
+/*genres*/
+
+genre:first-child:before {
     content: "分类：";
     font-size: 10pt;
 }
-genre:after{
+
+genres {
+    display: block;
+}
+
+genre:after {
     content: attr(category) '.';
     font-size: 10pt;
 }
-language:first-child:before
-{
-    content: "\00A0\00A0""语言：";
+
+
+/*languages*/
+
+language:first-child:before {
+    content: "语言：";
     font-size: 10pt;
 }
-language:after{
+
+languages {
+    display: block;
+}
+
+language:after {
     content: attr(category) '.';
     font-size: 10pt;
 }
-introduction{
+
+
+/*Introduction & Ratings*/
+
+introduction {
     display: block;
     text-align: justify;
     text-justify: inter-ideograph;
@@ -67,16 +113,18 @@ introduction{
     font-size: 10pt;
     width: 500pt;
 }
-review:before{
+
+review:before {
     content: '豆瓣评分：' attr(rating)"\00A0\00A0\00A0\00A0\00A0" '评分人数：' attr(number)'\a''"';
     font-size: 10pt;
     white-space: pre;
 }
-review{
+
+review {
     font-size: 10pt;
     font-weight: bold;
 }
-review:after
-{
-    content:"\"";
+
+review:after {
+    content: "\"";
 }
