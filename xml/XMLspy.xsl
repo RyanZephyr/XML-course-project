@@ -14,47 +14,55 @@
                 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
                 <link rel="shortcut icon" href="../favicon.ico" type="x-icon" />
                 <title>XMLspy</title>
-
             </head>
-            <body>
+            <body style="font-family: 'Microsoft YaHei';">
                 <img src="../images/Logo.png" style="display:block; margin:20px auto;" />
-                <p style="text-align: center; font-size: 15pt;">XML技术课程小组</p>
-                <table width="40%" align="center" style="margin: 30px auto;">
-                    <thead>
-                        <tr>
-                            <th>小组名称</th>
-                            <th>小组编号</th>
-                            <th>小组主题</th>
-                        </tr>
-                    </thead>
+                <p style="text-align: center; font-size: 15pt; font-weight: bold;">XML技术课程小组-<xsl:value-of select="XMLspy/@no" />-<xsl:value-of select="XMLspy/@theme" /></p>
+
+                <table width="60%" align="center" style="display:block; margin:0 auto; table-layout:fixed;">
                     <tbody>
-                        <tr>
-                            <td style="text-align:center" height="50">
-                                <xsl:value-of select="XMLspy/@name" />
-                            </td>
-                            <td style="text-align:center" height="50">
-                                <xsl:value-of select="XMLspy/@no" />
-                            </td>
-                            <td style="text-align:center" height="50">
-                                <xsl:value-of select="XMLspy/@theme" />
-                            </td>
-                        </tr>
+                        <xsl:apply-templates />
                     </tbody>
                 </table>
-                <!-- <h3 style="text-align: center;">小组名称</h3>
-                <h4 style="text-align: center;">
-                    <xsl:value-of select="XMLspy/@name" />
-                </h4>
-                <h3 style="text-align: center;">小组编号</h3>
-                <h4 style="text-align: center;">
-                    <xsl:value-of select="XMLspy/@no" />
-                </h4>
-                <h3 style="text-align: center;">小组主题</h3>
-                <h4 style="text-align: center;">
-                    <xsl:value-of select="XMLspy/@theme" />
-                </h4>
-                <h3 style="text-align: center;">小组成员</h3> -->
             </body>
         </html>
+    </xsl:template>
+
+    <xsl:template match="person">
+        <xsl:variable name="gender">
+            <xsl:choose>
+                <xsl:when test="@gender='male'">
+                        男
+                    </xsl:when>
+                <xsl:when test="@gender='female'">
+                        女
+                    </xsl:when>
+                <xsl:otherwise>
+                        不明
+                    </xsl:otherwise>
+            </xsl:choose>
+        </xsl:variable>
+        <xsl:variable name="sno">
+            <xsl:value-of select="@sno" />
+        </xsl:variable>
+        <tr>
+            <td align="center">
+                <img src="../images/{$sno}.jpg" style="width: 200px; height: 200px; display: flex; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden; margin: 10px 10px;" alt="" />
+            </td>
+            <td>
+                <xsl:value-of select="name" />，<xsl:value-of select="$gender" />，<xsl:value-of select="@age" />岁，<xsl:value-of select="identity" />，学号<xsl:value-of select="@sno" />.
+                <br />
+                <br />
+                地址：<xsl:value-of select="address" />&#160;&#160;&#160;&#160;
+                邮编：<xsl:value-of select="address/@postcode" />
+                <br />
+                联系方式：<xsl:value-of select="contact/mobile" />
+                <br />
+                电子邮箱：<xsl:value-of select="contact/email" />
+                <br />
+                <br />
+                <b>“<xsl:value-of select="motto"/>”</b>
+            </td>
+        </tr>
     </xsl:template>
 </xsl:stylesheet>
