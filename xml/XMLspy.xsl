@@ -17,7 +17,7 @@
             </head>
             <body style="font-family: 'Microsoft YaHei';">
                 <img src="../images/Logo.png" style="display:block; margin:20px auto;" />
-                <p style="text-align: center; font-size: 15pt; font-weight: bold;">XML技术课程小组-<xsl:value-of select="XMLspy/@no" />-<xsl:value-of select="XMLspy/@theme" /></p>
+                <p style="text-align: center; font-size: 15pt; font-weight: bold;">XML技术课程小组-<xsl:value-of select="XMLspy/@no" />-<xsl:value-of select="XMLspy/@theme" />&#160;&#160;18-19-3学期</p>
 
                 <table width="60%" align="center" style="margin:0 auto; table-layout:fixed;">
                     <tbody>
