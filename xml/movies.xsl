@@ -27,12 +27,12 @@
 							<img src="../images/posters/{$img}" style="width:300px; height:400px; position:relative;" />
 						</a>
 						<!-- text -->
-						<div style="margin-left:330px; margin-top:-400px;">
+						<div style="margin-left:330px; margin-top:-400px; height:460px;">
 							<p>
 								<b>NO.<xsl:value-of select="@ranking" /></b>
 								&#160;&#160;
-								<font style="background: #F9C461; border: 1px solid #F9C461; border-radius: 40px 30px 20px 10px;">
-									<xsl:value-of select="review/@rating" />
+								<font style="font: 'Microsoft YaHei'; background: #F9C461; border: 1px solid #F9C461; border-radius: 10px 10px 10px 10px;">
+									豆瓣评分：<xsl:value-of select="review/@rating" />
 								</font>
 							</p>
 							<p style="font-size: 20px;">
