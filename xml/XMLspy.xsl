@@ -19,7 +19,7 @@
                 <img src="../images/Logo.png" style="display:block; margin:20px auto;" />
                 <p style="text-align: center; font-size: 15pt; font-weight: bold;">XML技术课程小组-<xsl:value-of select="XMLspy/@no" />-<xsl:value-of select="XMLspy/@theme" /></p>
 
-                <table width="60%" align="center" style="display:block; margin:0 auto; table-layout:fixed;">
+                <table width="60%" border="1" align="center" style="display:block; margin:0 auto; table-layout:fixed;">
                     <tbody>
                         <xsl:apply-templates />
                     </tbody>
