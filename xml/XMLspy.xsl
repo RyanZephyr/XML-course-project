@@ -18,7 +18,7 @@
             </head>
             <body>
                 <img src="../images/Logo.png" style="display:block; margin:0 auto;" />
-                <table width="40%" align="center">
+                <table width="40%" align="center" style="margin: 10px;">
                     <thead>
                         <tr>
                             <th>小组名称</th>
@@ -28,13 +28,13 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td style="text-align:center" height="70">
+                            <td style="text-align:center" height="50">
                                 <xsl:value-of select="XMLspy/@name" />
                             </td>
-                            <td style="text-align:center" height="70">
+                            <td style="text-align:center" height="50">
                                 <xsl:value-of select="XMLspy/@no" />
                             </td>
-                            <td style="text-align:center" height="70">
+                            <td style="text-align:center" height="50">
                                 <xsl:value-of select="XMLspy/@theme" />
                             </td>
                         </tr>
