@@ -9,8 +9,7 @@
     <meta http-equiv="Cache" content="no-cache">
     <title>XMLspy</title>
     <link rel="shortcut icon" href="favicon.ico" type="x-icon">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
@@ -30,19 +29,25 @@
         </thead>
         <tbody>
             <tr>
-                <td><A href="xml/chen_yin.xml">陈崟（组长）</A></td>
+                <td>
+                    <A href="xml/chen_yin.xml">陈崟（组长）</A>
+                </td>
                 <td>男</td>
                 <td>71116340</td>
                 <td>448068200</td>
             </tr>
             <tr>
-                <td><A href="xml/chen_yue.xml">陈玥</A></td>
+                <td>
+                    <A href="xml/chen_yue.xml">陈玥</A>
+                </td>
                 <td>女</td>
                 <td>71116308</td>
                 <td>826284647</td>
             </tr>
             <tr>
-                <td><A href="xml/zhou_zhi_yong.xml">周志勇</A></td>
+                <td>
+                    <A href="xml/zhou_zhi_yong.xml">周志勇</A>
+                </td>
                 <td>男</td>
                 <td>71116336</td>
                 <td>455145348</td>
@@ -64,32 +69,31 @@
             <tr>
                 <td>准备工作</td>
                 <td>
-                    安装集成平台；<br>
-                    编写个人名片；<br>
-                    建立小组，确定研讨数据主题。
+                    安装集成平台；<br> 编写个人名片；
+                    <br> 建立小组，确定研讨数据主题。
                 </td>
                 <td>
-                    小组成员均安装了XMLspy 2013版；<br>
-                    个人名片编写完成；<br>
-                    建立了小组，研讨数据主题确定为豆瓣网评分Top 250电影信息。
+                    小组成员均安装了XMLspy 2013版；<br> 个人名片编写完成；
+                    <br> 建立了小组，研讨数据主题确定为豆瓣网评分Top 250电影信息。
                 </td>
             </tr>
             <tr>
                 <td>实验前提条件</td>
                 <td>
-                    建站；<br>
-                    选择数据源类型，确定数据源的来源；<br>
-                    建立案例信息模型。
+                    建站；<br> 选择数据源类型，确定数据源的来源；
+                    <br> 建立案例信息模型。
                 </td>
                 <td>
-                    网站建立完成；<br>
-                    数据源：<A href="https://movie.douban.com/top250">豆瓣电影 Top 250</A><br>
-                    建立<A href="images/XML tree.png">树形XML信息模型v1</A>（点击查看）。
+                    网站建立完成；<br> 数据源：
+                    <A href="https://movie.douban.com/top250">豆瓣电影 Top 250</A><br> 建立
+                    <A href="images/XML tree.png">树形XML信息模型v1</A>（点击查看）。
                 </td>
             </tr>
         </tbody>
     </table>
     <img src="images/XML tree v2.jpg" style="display:block; margin:0 auto;" width="98%" height="98%" />
+
+    <!-- 实验任务1 -->
     <table class="table">
         <thead>
             <tr>
@@ -105,7 +109,8 @@
                     获取15~30条数据，编写XML文档。
                 </td>
                 <td>
-                    获取了21条数据，并编写了<A href="xml/movies_v1.xml">movies_v1.xml</A>.
+                    获取了21条数据，并编写了
+                    <A href="xml/movies_v1.xml">movies_v1.xml</A>.
                 </td>
             </tr>
             <tr>
@@ -113,7 +118,8 @@
                     文档扩展到30条数据记录，并修改信息模型（注意“属性”的使用）。
                 </td>
                 <td>
-                    新增9条数据记录（共计30条，点击查看<A href="xml/movies_v2.xml">movies_v2.xml</A>），并修改了信息模型（见上图）。
+                    新增9条数据记录（共计30条，点击查看
+                    <A href="xml/movies_v2.xml">movies_v2.xml</A>），并修改了信息模型（见上图）。
                 </td>
             </tr>
             <tr>
@@ -139,4 +145,41 @@
         </tbody>
     </table>
     <img src="images/DTD.png" style="display:block; margin:0 auto;" width="50%" height="50%" />
+
+    <!-- 实验任务2 -->
+    <table class="table" style="margin-top: 20px;">
+        <thead>
+            <tr>
+                <th>任务</th>
+                <th>具体内容</th>
+                <th>任务进度</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">实验任务2</td>
+                <td>增加5条XML数据记录。</td>
+                <td>新增5条数据记录。（共计35条，点击查看
+                    <A href="xml/movies_v3.xml">movies_v3.xml</A>）</td>
+            </tr>
+            <tr>
+                <td>
+                    采用XML/XSLT+Xpath技术，完成：<br />
+                    <ol>
+                        <li>小组宣传海报；</li>
+                        <li>电影数据展示；</li>
+                        <li>3条特色数据的宣传海报。</li>
+                    </ol>
+                </td>
+                <td>
+                    点击查看
+                    <A href="xml/XMLspy.xml">小组宣传海报</A>； <br> 点击查看
+                    <A href="xml/movies_XSL.xml">电影数据展示</A>； <br>点击查看特色数据宣传海报 by
+                    <A href="xml/71116340陈崟/movie_chenyin.xml">陈崟</A>/
+                    <A href="xml/71116308陈玥/movie_chenyue.xml">陈玥</A>/
+                    <A href="xml/71116336周志勇/movie_zhouzhiyong.xml">周志勇</A>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </body>
