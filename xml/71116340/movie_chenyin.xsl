@@ -21,10 +21,10 @@
                     overflow: hidden;
                     }
                     div{
-                    width: 80%;
-                    height: 70%;
+                    width: 85%;
+                    height: 75%;
                     background: rgba(255, 250, 250, 0.9);
-                    border-radius:0px 16px 16px 0px;
+                    border-radius:16px 16px 16px 16px;
                     }
                     .center-in-center{
                         position: absolute;
@@ -53,55 +53,55 @@
             </xsl:variable>
             <!-- img -->
             <a href="https://www.imdb.com/title/{$IMDb}/">
-                <img src="{$ranking}.jpg" style="width:420px; height:630px; position:relative;" />
+                <img src="{$ranking}.jpg" style="width:380px; height:570px; position:relative;" />
             </a>
             <!-- text -->
-            <div style="margin-left:440px; margin-top:-600px; height: auto; background: rgba(255, 250, 250, 0);">
-                <b style="font-size: 20px;">
+            <div style="margin-left:400px; margin-top:-550px; height: auto; background: rgba(255, 250, 250, 0); border-radius:0px 0px 0px 0px;">
+                <b style="font-size: 18px;">
                     NO.
                     <xsl:value-of select="@ranking" />
                 </b>
                 &#160;&#160;
-                <font style="font-size: 20px; background: #F9C461; border: 1px solid #F9C461; border-radius: 10px 10px 10px 10px;">
+                <font style="font-size: 18px; background: #F9C461; border: 1px solid #F9C461; border-radius: 10px 10px 10px 10px;">
                     &#160;豆瓣评分：
                     <xsl:value-of select="review/@rating" />
                     &#160;
                 </font>
-                <p style="font-size: 27px; font-weight: bold; margin-top: 18px;">
+                <p style="font-size: 25px; font-weight: bold; margin-top: 18px;">
                         <xsl:value-of select="basic/name/Chinese_name" />
                         &#160;
                         <xsl:value-of select="basic/name/English_name" />
                         (<xsl:value-of select="@release_year" />)
                 </p>
-                <p style="font-size: 17px; margin-top: 18px;">
+                <p style="font-size: 16px; margin-top: 18px;">
                     演员：
                     <xsl:for-each select="basic/stars/actor">
                         <xsl:value-of select="." />.&#160;
                     </xsl:for-each>
                 </p>
-                <p style="font-size: 17px; margin-top: 2px;">
+                <p style="font-size: 16px; margin-top: 2px;">
                     类型：
                     <xsl:for-each select="basic/genres/genre">
                         <xsl:value-of select="@category" />.&#160;
                     </xsl:for-each>
                 </p>
-                <p style="font-size: 17px; margin-top: 2px;">
+                <p style="font-size: 16px; margin-top: 2px;">
                     语言：
                     <xsl:for-each select="basic/languages/language">
                         <xsl:value-of select="@category" />.&#160;
                     </xsl:for-each>
                 </p>
-                <p style="font-size: 17px; margin-top: 2px;">
+                <p style="font-size: 16px; margin-top: 2px;">
                     国家：
                     <xsl:value-of select="@country" />
                 </p>
-                <p style="font-size: 17px; margin-top: 10px; width: 740pt; text-align: justify; text-justify: inter-ideograph;">
+                <p style="font-size: 16px; margin-top: 10px; width: 660pt; text-align: justify; text-justify: inter-ideograph;">
                     简介：
                     <xsl:for-each select="introduction/paragraph">
                         <br /><br />&#160;&#160;&#160;&#160;<xsl:value-of select="." />
                     </xsl:for-each>
                 </p>
-                <div style="color: #FFFFFF; background-color: #F9C461; font-size: 25px; font-weight: bold; margin-top: 80px; width: 100%; height: 40px; border-radius:10px 0px 0px 10px;">
+                <div style="color: #FFFFFF; background-color: #F9C461; font-size: 25px; font-weight: bold; margin-top: 54px; width: 100%; height: 40px; border-radius:10px 0px 0px 10px;">
                    &#160;&#160;&#160;&#160;&#160;&#160;"<xsl:value-of select="review" />"
                 </div>
             </div>
