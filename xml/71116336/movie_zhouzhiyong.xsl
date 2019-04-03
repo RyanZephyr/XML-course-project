@@ -8,6 +8,13 @@
 		
 		<xsl:template match="/movies/movie">
 			<html>
+				<head>
+                <meta charset="UTF-8" />
+                <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+                <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+                <title>Zhou Zhiyong</title>
+            </head>
 				<body style="transform: scale(1.2);background-color:B2DFEE;">
 					<xsl:variable name="ranking">                
 						<xsl:value-of select="@ranking"/>
