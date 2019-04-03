@@ -55,7 +55,10 @@
 									<p>
 										导演：
 										<xsl:for-each select="basic/directors/director">
-											<xsl:value-of select="." />.&#160;
+											<xsl:value-of select="." />&#160;
+											<xsl:if test="position()!=last()">
+											/&#160;									
+											</xsl:if>
 										</xsl:for-each>
 									</p>
 								</xsl:otherwise>
@@ -63,19 +66,28 @@
 							<p>
 								演员：
 								<xsl:for-each select="basic/stars/actor">
-									<xsl:value-of select="." />.&#160;
+									<xsl:value-of select="." />&#160;
+									<xsl:if test="position()!=last()">
+										/&#160;									
+									</xsl:if>
 								</xsl:for-each>
 							</p>
 							<p>
 								类型：
 								<xsl:for-each select="basic/genres/genre">
-									<xsl:value-of select="@category" />.&#160;
+									<xsl:value-of select="@category" />&#160;
+									<xsl:if test="position()!=last()">
+										/&#160;									
+									</xsl:if>
 								</xsl:for-each>
 							</p>
 							<p>
 								语言：
 								<xsl:for-each select="basic/languages/language">
-									<xsl:value-of select="@category" />.&#160;
+									<xsl:value-of select="@category" />&#160;
+									<xsl:if test="position()!=last()">
+										/&#160;									
+									</xsl:if>
 								</xsl:for-each>
 							</p>
 							<p>
