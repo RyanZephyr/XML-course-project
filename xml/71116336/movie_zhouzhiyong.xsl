@@ -8,7 +8,7 @@
 	<xsl:template match="/">
 		<xsl:apply-templates />
 	</xsl:template>
-	<xsl:template match="/movies/movie">
+	<xsl:template match="movie">
 		<html>
 			<head>
 				<meta charset="UTF-8" />
