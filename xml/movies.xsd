@@ -80,6 +80,7 @@
 						<xs:enumeration value="Swedish"/>
 						<xs:enumeration value="Hebrew"/>
 						<xs:enumeration value="Polish"/>
+						<xs:enumeration value="German"/>
 					</xs:restriction>
 				</xs:simpleType>
 			</xs:attribute>
@@ -111,11 +112,11 @@
 					<xs:attribute name="rating">
 						<xs:simpleType>
 							<xs:restriction base="xs:decimal">
-								<xs:fractionDigits value="1" />
-								<xs:minInclusive value="0.0" />
-								<xs:maxInclusive value="10.0" />
+								<xs:fractionDigits value="1"/>
+								<xs:minInclusive value="0.0"/>
+								<xs:maxInclusive value="10.0"/>
 							</xs:restriction>
-						</xs:simpleType>					
+						</xs:simpleType>
 					</xs:attribute>
 					<xs:attribute name="number" type="xs:nonNegativeInteger"/>
 				</xs:extension>
@@ -129,7 +130,7 @@
 				<xs:element ref="introduction"/>
 				<xs:element ref="review"/>
 			</xs:sequence>
-			<xs:attribute name="ranking" type="xs:positiveInteger" />
+			<xs:attribute name="ranking" type="xs:positiveInteger"/>
 			<xs:attribute name="IMDb" type="xs:ID"/>
 			<xs:attribute name="country">
 				<xs:simpleType>
@@ -142,6 +143,8 @@
 						<xs:enumeration value="Japan"/>
 						<xs:enumeration value="India"/>
 						<xs:enumeration value="Korea"/>
+						<xs:enumeration value="UK"/>
+						<xs:enumeration value="Germany"/>
 					</xs:restriction>
 				</xs:simpleType>
 			</xs:attribute>
