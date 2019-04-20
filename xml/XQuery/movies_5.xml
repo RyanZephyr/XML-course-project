@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Top 250 Movies on Douban -->
+<movies>
+	<movie ranking="36" IMDb="tt5074352" country="India" release_year="2016">
+		<basic>
+			<name>
+				<Chinese_name>摔跤吧！爸爸</Chinese_name>
+				<English_name>Dangal</English_name>
+			</name>
+			<directors>
+				<director>Nitesh Tiwari</director>
+			</directors>
+			<stars>
+				<actor>Aamir Khan</actor>
+				<actor>Sakshi Tanwar</actor>
+				<actor>Fatima Sana Shaikh</actor>
+			</stars>
+			<genres>
+				<genre category="Action"/>
+				<genre category="Biography"/>
+				<genre category="Drama"/>
+			</genres>
+			<languages>
+				<language category="Hindi"/>
+				<language category="Tamil"/>
+				<language category="Telugu"/>
+			</languages>
+		</basic>
+		<introduction><![CDATA[
+	马哈维亚（阿米尔·汗 Aamir Khan 饰）曾经是一名前途无量的摔跤运动员，在放弃了职业生涯后，他最大的遗憾就是没有能够替国家赢得金牌。马哈维亚将这份希望寄托在了尚未出生的儿子身上，哪知道妻子接连给他生了两个女儿，取名吉塔（法缇玛·萨那·纱卡 Fatima Sana Shaikh 饰）和巴比塔（桑亚·玛荷塔 Sanya Malhotra 饰）。让马哈维亚没有想到的是，两个姑娘展现出了杰出的摔跤天赋，让他幡然醒悟，就算是女孩，也能够昂首挺胸的站在比赛场上，为了国家和她们自己赢得荣誉。 
+	就这样，在马哈维亚的指导下，吉塔和巴比塔开始了艰苦的训练，两人进步神速，很快就因为在比赛中连连获胜而成为了当地的名人。为了获得更多的机会，吉塔进入了国家体育学院学习，在那里，她将面对更大的诱惑和更多的选择
+		]]></introduction>
+		<review rating="9.1" number="761704人">你不是在为你一个人战斗，你要让千千万万的女性看到女生并不是只能相夫教子。</review>
+	</movie>	
+	<movie ranking="37" IMDb="tt1049413" country="USA" release_year="2009">
+		<basic>
+			<name>
+				<Chinese_name>飞屋环游记</Chinese_name>
+				<English_name>Up</English_name>
+			</name>
+			<directors>
+				<director>Pete Docter</director>
+				<director>Bob Peterson</director>
+			</directors>
+			<stars>
+				<actor>Edward Asner</actor>
+				<actor>Jordan Nagai</actor>
+				<actor>John Ratzenberger</actor>
+			</stars>
+			<genres>
+				<genre category="Animation"/>
+				<genre category="Adventure"/>
+				<genre category="Comedy"/>
+			</genres>
+			<languages>
+				<language category="English"/>
+			</languages>
+		</basic>
+		<introduction><![CDATA[
+	小男孩卡尔（Carl Fredricksen）怀揣着对于冒险的热爱偶遇假小子艾丽（Ellie），而艾丽把整个屋子当成一艘大飞船游戏居然使他对这个女孩子有些着迷，相同的爱好最终使两个人成为了一生的爱侣。 
+	他们有一个梦想，那就是有朝一日要去南美洲的“仙境瀑布”探险，但直到艾丽去世，这个梦想也未能实现。终于有一天，曾经专卖气球的老人卡尔居然用五颜六色的气球拽着他的房子飞上了天空，他决定要去实现他们未曾实现的梦想。令卡尔始料不及的是，门廊居然搭上了一个自称是“荒野开拓者”的小男孩小罗（Russell），小罗的喋喋不休让卡尔对这个小胖墩格外讨厌。 
+	一老一少在飞行中经过了千难万险终于看到了传说中的“仙境瀑布”，在相处过程中卡尔发现小罗其实是个惹人怜爱的孩子。在步行穿越一座森林时，他们遇到了不会飞的大鸟凯文（Kevin）和一只会说话的狗狗逗逗（Dug），让老人惊讶的是他们还遇到了他少年的崇拜偶像——探险家查尔斯·蒙兹（Charles Muntz），而且他发现蒙兹居然是一个为达目的不择手段的坏人。这时，老人离自己的梦想之地只有一步之遥…… 
+		]]></introduction>
+		<review rating="8.9" number="714568">最后那些最无聊的事情，才是最值得怀念的。</review>
+	</movie>
+	<movie ranking="38" IMDb="tt0112778" country="China" release_year="1995">
+		<basic>
+			<name>
+				<Chinese_name>大话西游之月光宝盒</Chinese_name>
+				<English_name>Sai yau gei: Yut gwong bou haap</English_name>
+			</name>
+			<directors>
+				<director>Jeffrey Lau</director>
+			</directors>
+			<stars>
+				<actor>Stephen Chow</actor>
+				<actor>Man-Tat Ng</actor>
+				<actor>Kar-Ying Law</actor>
+			</stars>
+			<genres>
+				<genre category="Action"/>
+				<genre category="Adventure"/>
+				<genre category="Comedy"/>
+			</genres>
+			<languages>
+				<language category="Cantonese"/>
+			</languages>
+		</basic>
+		<introduction><![CDATA[
+	孙悟空（周星驰）护送唐三藏（罗家英）去西天取经路上，与牛魔王合谋欲杀害唐三藏，并偷走了月光宝盒，此举使观音萌生将其铲除心思，经唐三藏请求，孙悟空被判五百年后重新投胎做人赎其罪孽。 
+	五百年后孙悟空化身强盗头头至尊宝。当遇见预谋吃唐僧肉的妖怪姐妹蜘蛛精春三十娘（蓝洁瑛）和白骨精白晶晶（莫文蔚）时，因为五百年前孙悟空曾与白晶晶有过一段恋情，至尊宝与她一见钟情，但因菩提老祖将二人妖怪身份相告，至尊宝仍带领众强盗开始与二妖展开周旋，过程中，白晶晶为救至尊宝打伤春三十娘，自己也中毒受伤，为了救白晶晶，至尊宝去找春三十娘，遭白晶晶误会，绝望自杀，至尊宝开始用月光宝盒以期使时光倒流。
+		]]></introduction>
+		<review rating="8.9" number="615709">旷古烁今。</review>
+	</movie>
+	<movie ranking="39" IMDb="tt0137523" country="USA" release_year="1999">
+		<basic>
+			<name>
+				<Chinese_name>搏击俱乐部</Chinese_name>
+				<English_name>Fight Club</English_name>
+			</name>
+			<directors>
+				<director>David Fincher</director>
+			</directors>
+			<stars>
+				<actor>Brad Pitt</actor>
+				<actor>Edward Norton</actor>
+				<actor>Meat Loaf</actor>
+			</stars>
+			<genres>
+				<genre category="Drama"/>
+			</genres>
+			<languages>
+				<language category="English"/>
+			</languages>
+		</basic>
+		<introduction><![CDATA[
+	杰克（爱德华·诺顿 饰）是一个大汽车公司的职员，患有严重的失眠症，对周围的一切充满危机和憎恨。 
+	一个偶然的机会，杰克遇上了卖肥皂的商人泰勒（布拉德·皮特），一个浑身充满叛逆、残酷和暴烈的痞子英雄，并因为自己公寓失火而住进了泰勒破旧不堪的家中。两人因缘际会地成为了好朋友，并创立了“搏击俱乐部”：一个让人们不戴护具而徒手搏击，宗旨在于发泄情绪的地下组织。 
+	俱乐部吸引了越来越多的人，逐渐发展成为一个全国性的地下组织，而泰勒也以自己个人的魅力，吸引着那些盲目的信徒。俱乐部的成员们到处滋事打架、大肆破坏，泰勒本人的行为也越来越疯狂。 
+	杰克对于“搏击俱乐部”的现况及泰勒的行为越来越无法忍受，和泰勒发生争执，泰勒离开了他。然而，杰克发现，他走到何处都无法摆脱泰勒的影子，他开始思考：我到底是谁？
+		]]></introduction>
+		<review rating="9.0" number="513360">邪恶与平庸蛰伏于同一个母体，在特定的时间互相对峙。</review>
+	</movie>
+	<movie ranking="40" IMDb="tt0046250" country="USA" release_year="1953">
+		<basic>
+			<name>
+				<Chinese_name>罗马假日</Chinese_name>
+				<English_name>Roman Holiday</English_name>
+			</name>
+			<directors>
+				<director>William Wyler</director>
+			</directors>
+			<stars>
+				<actor>Gregory Peck</actor>
+				<actor>Audrey Hepburn</actor>
+				<actor>Eddie Albert</actor>
+			</stars>Gregory Peck
+			<genres>
+				<genre category="Comedy"/>
+				<genre category="Romance"/>
+
+			</genres>
+			<languages>
+				<language category="English"/>
+				<language category="Italian"/>
+				<language category="German"/>
+			</languages>
+		</basic>
+		<introduction><![CDATA[
+	欧洲某国的安妮公主（奥黛丽·赫本 Audrey Hepburn 饰）到访罗马，国务烦身，但她又厌倦繁文缛节。一天晚上，身心俱疲的她偷偷来到民间欣赏夜景，巧遇报社记者乔（格里高利·派克 Gregory Peck 饰）。二人把手同游，相当快乐。公主更是到乔的家中作客并在那过夜。 
+	不料乔无意中发现了公主的真实身份，他决定炮制一个独家新闻，于是乔和朋友、摄影师欧文（埃迪·艾伯特 Eddie Albert 饰）一起带公主同游罗马，并且偷拍了公主的很多生活照。然而，在接下来与公主的相处中，乔不知不觉恋上了公主。为了保护公主的形象，乔只能忍痛抛弃功成名就的良机，将照片送予了公主。 
+	安妮公主在经历了罗马一日假期后，反而体验了自己对国家的责任，毅然返回了大使馆，为了本身的责任而果断抛弃了爱情。
+		]]></introduction>
+		<review rating="9.0" number="534792">爱情哪怕只有一天。</review>
+	</movie>
+</movies>

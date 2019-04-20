@@ -19,7 +19,8 @@
 
     <!-- group info -->
     <p style="text-align: center;">
-        小组名称：XMLspy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;小组编号：03&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;小组成员：</p>
+        小组名称：spy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;小组编号：03&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;小组主题：电影&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;小组成员：
+    </p>
     <table class="table">
         <thead>
             <tr>
@@ -27,6 +28,7 @@
                 <th>性别</th>
                 <th>学号</th>
                 <th>QQ</th>
+                <th>主讲PPT</th>
             </tr>
         </thead>
         <tbody>
@@ -37,6 +39,7 @@
                 <td>男</td>
                 <td>71116340</td>
                 <td>448068200</td>
+                <td><A href="PPT/spy_1.pptx">spy_1.pptx</A></td>
             </tr>
             <tr>
                 <td>
@@ -45,6 +48,7 @@
                 <td>女</td>
                 <td>71116308</td>
                 <td>826284647</td>
+                <td><A href="PPT/spy_3.pptx">spy_3.pptx</A></td>
             </tr>
             <tr>
                 <td>
@@ -53,6 +57,7 @@
                 <td>男</td>
                 <td>71116336</td>
                 <td>455145348</td>
+                <td><A href="PPT/spy_2.pptx">spy_2.pptx</A></td>
             </tr>
         </tbody>
     </table>
@@ -167,7 +172,7 @@
     </table>
     <img src="images/DTD.png" style="display:block; margin:0 auto;" width="50%" height="50%" />
 
-    <!-- 实验任务2 -->
+    <!-- 实验任务2 & 3 -->
     <table class="table" style="margin-top: 20px;">
         <thead>
             <tr>
@@ -178,7 +183,7 @@
         </thead>
         <tbody>
             <tr>
-                <td rowspan="3">实验任务2</td>
+                <td rowspan="3" style="width:8%">实验任务2</td>
                 <td>增加5条XML数据记录。</td>
                 <td>新增5条数据记录。（共计35条，点击查看
                     <A href="xml/movies_v3.xml">movies_v3.xml</A>）</td>
@@ -208,6 +213,52 @@
                     <A href="xml/SVG/chenyue.svg">陈玥</A>/
                     <A href="xml/SVG/zhouzhiyong.svg">周志勇</A></td>
             </tr>
+            <tr>
+                <td rowspan="2">实验任务3</td>
+                <td>获取其他小组的5条数据，或者新增5条数据，组成一个新的XML文档;<br>
+                    利用XQuery技术，从原有文档中提取5条数据记录，再与该新建XML文档，重新构建另一个含有10条数据记录的新XML文档。
+                </td>
+                <td>在原有数据<A href="xml/XQuery/movies_30.xml">movies_30.xml</A>基础上，新增了5条数据（点击查看<A
+                        href="xml/XQuery/movies_5.xml">movies_5.xml</A>）;<br>通过<A
+                        href="xml/XQuery/generator.xquery">generator.xquery</A>构建了<A
+                        href="xml/XQuery/movies_10.xml">movies_10.xml</A>.</td>
+            </tr>
+            <tr>
+                <td>利用XQuery技术，编写XQuery查询语句，完成查询需求。</td>
+                <td>点击查看XQuery查询文件及相应结果：<br>
+                    <A href="xml/XQuery/1_1.xquery">1_1.xquery</A>&nbsp;&nbsp;<A
+                        href="xml/XQuery/1_1.xml">1_1.xml</A><br>
+                    <A href="xml/XQuery/1_2.xquery">1_2.xquery</A>&nbsp;&nbsp;<A
+                        href="xml/XQuery/1_2.xml">1_2.xml</A><br>
+                    <A href="xml/XQuery/1_3.xquery">1_3.xquery</A>&nbsp;&nbsp;<A
+                        href="xml/XQuery/1_3.xml">1_3.xml</A><br>
+                    <A href="xml/XQuery/2_1.xquery">2_1.xquery</A>&nbsp;&nbsp;<A
+                        href="xml/XQuery/2_1.xml">2_1.xml</A><br>
+                    <A href="xml/XQuery/2_2.xquery">2_2.xquery</A>&nbsp;&nbsp;<A
+                        href="xml/XQuery/2_2.xml">2_2.xml</A><br>
+                    <A href="xml/XQuery/2_3.xquery">2_3.xquery</A>&nbsp;&nbsp;<A
+                        href="xml/XQuery/2_3.xml">2_3.xml</A><br>
+                    <A href="xml/XQuery/3.xquery">3.xquery</A>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A
+                        href="xml/XQuery/3.xml">3.xml</A><br>
+                    <A href="xml/XQuery/4.xquery">4.xquery</A>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A
+                        href="xml/XQuery/4.xml">4.xml</A><br>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="2">实验任务4</td>
+                <td>设计界面程序，利用Java语言，编写SAX分析器，完成任务要求。</td>
+                <td>点击下载<A href="xml/SAX_spy.zip">源代码及可执行文件</A>。</td>
+            </tr>
+            <tr>
+                <td>在已设计的界面程序中，利用Java语言，新增编写DOM分析器，完成任务要求。</td>
+                <td>点击下载<A href="xml/DOM_spy.zip">源代码及可执行文件</A>。</td>
+            </tr>
         </tbody>
     </table>
+    <img src="images/SAX.gif"
+        style="display:block; margin:0 auto; margin-top: 40px; margin-bottom: 20px; width: 390px; height: 510px" />
+    <h6 style="font-weight: bold; text-align: center;">SAX分析器</h6>
+    <img src="images/DOM.gif"
+        style="display:block; margin:0 auto; margin-top: 40px; margin-bottom: 20px; width: 1040px; height: 520px" />
+    <h6 style="font-weight: bold; text-align: center;">DOM分析器</h6>
 </body>
